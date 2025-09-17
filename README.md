@@ -177,3 +177,15 @@ For this first lab, you will demonstrate both your ability to get the system run
 - Push your work to a public GitHub repository.
 - Include the YouTube demo link and explanations in the `README.md`.
 - Submit the link to your GitHub repository as your final lab deliverable in **Brightspace**.
+
+
+### YOUTUBE LINK AND GITHUB
+ - https://youtu.be/YGM9xATQqW4
+ - https://github.com/DomHeallis/Lab1_25F_CST8915_Algonquin_Pet_Store.git
+
+ ### Explanation
+ - It starts with the customer who uses the store front UI. This is the interface where customers brown products, views some details, and place orders. 
+ - When the order is placed, 2 things happen. 1. The front end talks to the product service and order service.
+ - The product service is responsible for the details, like what the names of the products are, pricing, etc. Showcased in my demo, i show where I've changed the name of Dog Food to Dom Food.
+ - The order service receives the request from the store front, validates and pushes it into queue where we can observe it in RabbitMQ (order queue).
+ - From what I see, the customer interacts with the store front. The store front contacts the product service for product info, pricing, etc while at the same time sending the order to the order service. The order service sends it to Order queue for reliable processing and into a queue, where we can display a bunch of information on that order.
